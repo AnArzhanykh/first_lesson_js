@@ -1,40 +1,41 @@
 let country = prompt('Укажите страну куда совершить доставку');
 
+let price;
+let deliveryСountry;
+
 if (country !== null){
     country = country.toLowerCase();
-
-    const Chine = 'Китай';
-    const Chile = 'Чили';
-    const Australia = 'Австралия';
-    const India = 'Индия'
-    const Jamaica = 'Ямайка'
-
-
+    
     switch (country){
         case 'китай' :
-            let priceChine = 100;  
-            alert(`Доставка в ${Chine} будет стоить ${priceChine} кредитов`);
+            deliveryСountry = 'Китай';
+            price = 100;  
+            alert(`Доставка в ${deliveryСountry} будет стоить ${price} кредитов`);
             break
 
         case 'чили':
-            let priceChile = 250;
-            alert(`Доставка в ${Chile} будет стоить ${priceChile} кредитов`);
+            deliveryСountry = 'Чили';
+            price = 250;
+            alert(`Доставка в ${deliveryСountry} будет стоить ${price} кредитов`);
             break  
 
 
         case 'австралия':
-            let priceAustralia = 170;
-            alert(`Доставка в ${Australia} будет стоить ${priceAustralia} кредитов`);
+            deliveryСountry = 'Австралия';
+            price = 170;
+            alert(`Доставка в ${deliveryСountry} будет стоить ${price} кредитов`);
             break
 
         case 'индия' :
-            let priceIndia = 80; 
-            alert(`Доставка в ${India} будет стоить ${priceIndia} кредитов`);
+            deliveryСountry = 'Индия';
+            price = 80; 
+            alert(`Доставка в ${deliveryСountry} будет стоить ${price} кредитов`);
             break
 
         case 'ямайка':
-            let priceJamaica = 120;        
-            alert(`Доставка в ${Jamaica} будет стоить ${priceJamaica} кредитов`);
+            deliveryСountry = 'Ямайкаай';
+            price = 120;        
+            alert(`Доставка в ${deliveryСountry} будет стоить ${price} кредитов`);
             break
 
         default :
